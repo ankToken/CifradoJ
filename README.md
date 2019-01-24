@@ -1,2 +1,2 @@
 # CifradoJ
-Aplicación Android que cifra y descifra con el método César.
+Aplicación Android que cifra y descifra mediante el método César.
