@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CifradoJ</string>
+    <string name="hecho">Feito!</string>
+    <string name="cifrar">Criptografar</string>
+    <string name="codigo">Chave</string>
+    <string name="copiar">Cópia de</string>
+    <string name="descifrar">Descriptografar</string>
+    <string name="entrada">Escreva aqui</string>
+    <string name="validar">Preencha os campos</string>
+    <string name="salida">A chave é</string>
+    <string name="proceso">Isso pode levar algum tempo</string>
+    <string name="error">Erro, entre em contato com o desenvolvedor</string>
+    <string name="consejo">Se a chave for muito longa, isso pode demorar um pouco mais</string>
+    <string name="copiado">Ele foi copiado texto para a área de transferência</string>
+    <string name="validarLlaveCantidad">A chave deve ser um pouco mais</string>
+    <string name="validarLlaveCero">A chave não deve ser todos os zeros</string>
+</resources>

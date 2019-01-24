@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CifradoJ</string>
+    <string name="cifrar">Encrypt</string>
+    <string name="descifrar">Decrypt</string>
+    <string name="entrada">Write here</string>
+    <string name="codigo">Key</string>
+    <string name="copiar">Copy</string>
+    <string name="hecho">Done!</string>
+    <string name="validar">Fill in the fields</string>
+    <string name="validarLlaveCantidad">The key should be a bit longer</string>
+    <string name="validarLlaveCero">The key should not be just zeros</string>
+    <string name="salida">The key is: </string>
+    <string name="proceso">This could take some time</string>
+    <string name="error">Error, contact the developer</string>
+    <string name="consejo">If the key is very long, this could take a little longer</string>
+    <string name="copiado">Text copied to clipboard</string>
+</resources>

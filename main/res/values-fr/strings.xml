@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CifradoJ</string>
+    <string name="cifrar">Crypter</string>
+    <string name="codigo">Clé</string>
+    <string name="copiar">Copie</string>
+    <string name="descifrar">Décrypter</string>
+    <string name="entrada">Ecrire ici</string>
+    <string name="hecho">Terminé!</string>
+    <string name="validar">La clé est</string>
+    <string name="salida">"La clé est: "</string>
+    <string name="proceso">Cela pourrait prendre un certain temps</string>
+    <string name="error">Erreur, contactez le développeur</string>
+    <string name="consejo">Si la clé est très longue, cela pourrait prendre un peu plus de temps</string>
+    <string name="copiado">Il a été texte copié dans le presse-papiers</string>
+    <string name="validarLlaveCantidad">La clé devrait être un peu plus longue</string>
+    <string name="validarLlaveCero">La clé ne doit pas être tous les zéros</string>
+</resources>

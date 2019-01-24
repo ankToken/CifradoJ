@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+        <TabHost
+            android:id="@android:id/tabhost"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            tools:layout_constraintTop_creator="1"
+            tools:layout_constraintRight_creator="1"
+            tools:layout_constraintBottom_creator="1"
+            tools:layout_constraintLeft_creator="1"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp">
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/layoutCifrar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etTextoCifrar"
+                            android:layout_width="0dp"
+                            android:layout_height="122dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:ems="10"
+                            android:hint="@string/entrada"
+                            android:inputType="textMultiLine"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnCifrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="-318dp"
+                            android:layout_marginTop="26dp"
+                            android:text="@string/cifrar"
+                            app:layout_constraintRight_toRightOf="@+id/etTextoCifrar"
+                            app:layout_constraintTop_toBottomOf="@+id/etTextoCifrar" />
+
+                        <EditText
+                            android:id="@+id/etCodigoCifrar"
+                            android:layout_width="121dp"
+                            android:layout_height="41dp"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="26dp"
+                            android:ems="10"
+                            android:hint="@string/codigo"
+                            android:inputType="numberPassword"
+                            android:maxLength="9"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="@+id/etTextoCifrar"
+                            app:layout_constraintRight_toLeftOf="@+id/btnCifrar"
+                            app:layout_constraintTop_toBottomOf="@+id/etTextoCifrar" />
+
+                        <TextView
+                            android:id="@+id/tvTextoCifrado"
+                            android:layout_width="0dp"
+                            android:layout_height="102dp"
+                            android:layout_marginBottom="57dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:fadeScrollbars="false"
+                            android:isScrollContainer="false"
+                            android:scrollbarAlwaysDrawVerticalTrack="false"
+                            android:scrollbars="vertical"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etCodigoCifrar"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <Button
+                            android:id="@+id/btnCopiarCifrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="9dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="-318dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/copiar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="@+id/tvTextoCifrado"
+                            app:layout_constraintTop_toBottomOf="@+id/tvTextoCifrado" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/layoutDescifrar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etTextoDescifrar"
+                            android:layout_width="0dp"
+                            android:layout_height="122dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:ems="10"
+                            android:hint="@string/entrada"
+                            android:inputType="textMultiLine"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/btnDescifrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="-318dp"
+                            android:layout_marginTop="26dp"
+                            android:text="@string/descifrar"
+                            app:layout_constraintRight_toRightOf="@+id/etTextoDescifrar"
+                            app:layout_constraintTop_toBottomOf="@+id/etTextoDescifrar" />
+
+                        <EditText
+                            android:id="@+id/etCodigoDescifrar"
+                            android:layout_width="121dp"
+                            android:layout_height="41dp"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="13dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="26dp"
+                            android:ems="10"
+                            android:hint="@string/codigo"
+                            android:inputType="numberPassword"
+                            android:maxLength="9"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="@+id/etTextoDescifrar"
+                            app:layout_constraintRight_toLeftOf="@+id/btnDescifrar"
+                            app:layout_constraintTop_toBottomOf="@+id/etTextoDescifrar" />
+
+                        <TextView
+                            android:id="@+id/tvTextoDescifrado"
+                            android:layout_width="0dp"
+                            android:layout_height="102dp"
+                            android:layout_marginBottom="57dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/etCodigoDescifrar"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <Button
+                            android:id="@+id/btnCopiarDescifrar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="9dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginRight="-318dp"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/copiar"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintRight_toRightOf="@+id/tvTextoDescifrado"
+                            app:layout_constraintTop_toBottomOf="@+id/tvTextoDescifrado" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </TabHost>
+
+</android.support.constraint.ConstraintLayout>
